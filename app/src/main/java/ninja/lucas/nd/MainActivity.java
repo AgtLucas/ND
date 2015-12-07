@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         getActionBar().setHomeButtonEnabled(true);
 
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, mPlanetTitles));
-        mDrawerList.setOnClickListener(new DrawerItemClickListener());
+        mDrawerList.setOnClickListener((View.OnClickListener) new DrawerItemClickListener());
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
